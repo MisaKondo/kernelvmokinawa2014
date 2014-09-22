@@ -1,0 +1,7 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+order deny,allow
+
+Header set Content-Security-Policy "default-src 'self'; frame-src 'none';"
